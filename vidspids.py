@@ -45,3 +45,11 @@ class VidsPids(dict):
         """
         vidpids = self.get(vendorid)
         return vidpids[1] if vidpids else {}
+
+    def product(self, vendorid, productid):
+        """
+        returns the specified product for the specified vendor
+        the vendor ID and the product ID are integers (32902 or 0x8086)
+        """
+        pids = self.products(vendorid)
+        return pids.get(productid) if pids else ""
