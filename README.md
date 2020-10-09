@@ -10,13 +10,13 @@ len(vp)
 3407
 
 vp.get(32902)
-('Intel Corp.', {1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …, 61861: 'Z-U130 [Value Solid State Drive]'})
+('Intel Corp.', {1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …})
 
 vp.vendor(0x8086)
 'Intel Corp.'
 
 vp.products(0x8086)
-{1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …, 61861: 'Z-U130 [Value Solid State Drive]'}
+{1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …}
 ```
 
 ```python
