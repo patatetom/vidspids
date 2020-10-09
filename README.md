@@ -5,6 +5,7 @@ USB Vendor IDs Product IDs
 from vidspids import VidsPids
 
 vp = VidsPids()
+# or vp = VidsPids('/path/to/usb.ids')
 
 len(vp)
 3407
@@ -17,10 +18,4 @@ vp.vendor(0x8086)
 
 vp.products(0x8086)
 {1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …}
-```
-
-```python
-from vidspids import VidsPids
-
-vp = VidsPids('/path/to/usb.ids')
 ```
