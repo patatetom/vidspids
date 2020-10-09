@@ -19,6 +19,6 @@ vp.vendor(0x8086)
 vp.products(0x8086)
 {1: 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter', …}
 
-vp.product(0x8086, 61861)
-'Z-U130 [Value Solid State Drive]'
+vp.product(0x8086, 0x0001)
+'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter'
 ```
