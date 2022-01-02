@@ -22,3 +22,23 @@ vp.products(0x8086)
 vp.product(0x8086, 0x0001)
 'AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter'
 ```
+
+```console
+$ vidpid.sh 
+hexadecimal (ex. 02ad) vendor ID is required (vid [pid|-] [usb.ids])
+
+$ vidpid.sh 8086
+Intel Corp. (8086)
+
+$ vidpid.sh 8086 -
+Intel Corp. (8086)
+
+$ vidpid.sh 8086 0001
+Intel Corp. (8086)	AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter (0001)
+
+$ vidpid.sh 8086 - /tmp/usb.ids 
+Intel Corp. (8086)
+
+$ vidpid.sh 8086 0001 /tmp/usb.ids 
+Intel Corp. (8086)	AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter (0001)
+```
