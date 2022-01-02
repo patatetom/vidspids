@@ -11,7 +11,7 @@ vid=${1:?$'\r\e[K'hexadecimal (ex. 02ad) vendor ID is required (vid [pid] [usb.i
 
 pid=${2:-}
 [ "${pid}" ] &&
-	! [[ "${pid,,}" =~ ^[0-9a-f]{4}$ ]] &&
+	! [[ "${pid,,}" =~ ^([0-9a-f]{4})|-$ ]] &&
 		pid=${error:?$'\r\e[K'bad hexadecimal (ex. 138c) product ID}
 
 hwdata=${3:-/usr/share/hwdata/usb.ids}
