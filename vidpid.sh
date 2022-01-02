@@ -5,7 +5,7 @@ set -eu
 
 
 # check/set variables
-vid=${1:?$'\r\e[K'hexadecimal (ex. 02ad) vendor ID is required (vid [pid] [usb.ids])}
+vid=${1:?$'\r\e[K'hexadecimal (ex. 02ad) vendor ID is required (vid [pid|-] [usb.ids])}
 [[ "${vid,,}" =~ ^[0-9a-f]{4}$ ]] ||
 	vid=${error:?$'\r\e[K'bad hexadecimal (ex. 02ad) vendor ID}
 
