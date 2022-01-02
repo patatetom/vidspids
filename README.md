@@ -2,7 +2,7 @@
 USB Vendor IDs Product IDs
 
 ```python
-from vidspids import VidsPids
+from vidpid import VidsPids
 
 vp = VidsPids()
 # or vp = VidsPids('/path/to/usb.ids')
