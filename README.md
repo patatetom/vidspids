@@ -1,5 +1,5 @@
 # vidspids
-USB Vendor IDs Product IDs
+USB Vendor IDs Product IDs (http://www.linux-usb.org/usb-ids.html)
 
 ```python
 from vidpid import VidsPids
