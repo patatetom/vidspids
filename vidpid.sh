@@ -37,10 +37,6 @@ then
 	_pid=$( echo ${_pid:5} )
 	[ "${_pid}" ] && pid="${_pid} (${pid,,})"
 
-	echo ${vid} $( [ "${pid}" ] && ( [ "${_pid}" ] && echo ${pid} || echo "(product ID ${pid,,} not found)" ))
-
-else
-
-	echo ${vid} $( [ "${pid}" ] && echo ${pid} )
+	echo ${vid}"$( [ "${_pid}" ] && echo $'\t'${pid} )"
 
 fi
